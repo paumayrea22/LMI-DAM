@@ -1,0 +1,443 @@
+/* --- IMPORTACIÓN DE FUENTES --- */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* --- ENCABEZADO PRINCIPAL (HEADER) --- */
+header {
+    width: 100%;
+    background-color: #4a772f;
+    background-image: url("/ProyectoWeb_PauMayordomo_LMI/img/imagen_decorativa.png");
+    background-position: center;
+    background-size: 60%;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.textoEncabezado {
+    float: left;
+    width: 60%;
+    text-align: right;
+}
+
+.titular {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.subtitulo {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 1.3rem;
+    color: #adc4a4;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.logo {
+    float: right;
+    width: 15%;
+    height: auto;
+    margin-right: 15%;
+}
+
+/* --- MENÚ DE NAVEGACIÓN --- */
+.menu {
+    width: 100%;
+    background-color: #8EAF76;
+    margin-top: 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 0.4rem;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    padding: 0.3rem 1.5rem;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+}
+
+.menu a:hover {
+    background-color: #4a772f;
+    border-bottom-color: white;
+    border-radius: 0.3rem;
+    color: #adc4a4;
+}
+
+.menu a.activo {
+    border-bottom-color: white;
+}
+
+/* --- ESTILOS GENERALES (BODY, FOOTER, MAIN) --- */
+body {
+    background-color: #f2f2e9;
+}
+
+footer {
+    width: 100%;
+    background-color: #4a772f;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* --- PÁGINA INICIO: SECCIÓN INFORMACIÓN --- */
+.informacion {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.informacion h2 {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    color: #4a772f;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.informacion h3 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #4a772f;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.informacion a {
+    color: #4a772f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.informacion a:hover {
+    text-decoration: underline;
+}
+
+/* --- ESTRUCTURA DE COLUMNAS (INDEX) --- */
+.contenedor {
+    overflow: hidden;
+    width: 100%;
+}
+
+.informacion article {
+    overflow: hidden;
+    width: 100%;
+}
+
+.columnaIzquierda {
+    float: left;
+    width: 45%;
+}
+
+.columnaDerecha {
+    float: right;
+    width: 45%;
+}
+
+.columnaIzquierda ul,
+.columnaDerecha ul {
+    list-style: disc inside;
+    padding-left: 0;
+    margin-bottom: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.columnaIzquierda li,
+.columnaDerecha li {
+    margin-bottom: 0.5rem;
+}
+
+/* --- PÁGINA INICIO: SECCIÓN ACTIVIDADES --- */
+.actividades {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: #e8e4d9;
+    padding: 2rem;
+}
+
+.actividades h3 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #4a772f;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.actividad {
+    width: 22%;
+    padding: 10px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+}
+
+.actividad:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: all 0.3s;
+    padding: 0.5rem;
+}
+
+.actividad img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+
+.actividad p {
+    color: #4a772f;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* --- HEADER ESPECÍFICO DE PROGRAMACIÓN --- */
+.encabezadoProgramacion {
+    width: 100%;
+    text-align: center;
+}
+
+.titularProgramacion {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 1.6rem;
+    color: white;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.programacion {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 1.8rem;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.subtituloProgramacion {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 1.3rem;
+}
+
+/* --- PÁGINA PROGRAMACIÓN: TABLA --- */
+.tituloPrograma {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    color: #4a772f;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.cabecera th {
+    background-color: #8bb174;
+    color: #333;
+    padding: 0.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+td {
+    padding: 0.3rem;
+    border: 1px solid #c5b9b9;
+    vertical-align: middle;
+    color: #333;
+}
+
+.filaPar {
+    background-color: #8bb1746e;
+}
+
+.fechas,
+.ponente {
+    background-color: white;
+    vertical-align: middle;
+}
+
+.fechas {
+    text-align: center;
+    font-weight: bold;
+}
+
+.hora {
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* --- PÁGINA REGISTRO: FORMULARIO --- */
+.seccionRegistro {
+    background-color: #e8e4d9;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.tituloRegistro {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    color: #4a772f;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.bloqueFormulario {
+    border: none;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+.bloqueFormulario legend {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    color: #4a772f;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    padding-bottom: 0.5rem;
+}
+
+.cajaTalleres {
+    border: 2px solid #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* --- ESTILOS DE LOS CAMPOS DEL FORMULARIO --- */
+.formulario label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario select,
+.formulario textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+}
+
+/* --- VALIDACIONES VISUALES (VERDE/ROJO) --- */
+.formulario input:not([type="checkbox"]):valid,
+.formulario textarea:valid,
+.formulario select:valid {
+    border: 2px solid #4CAF50;
+}
+
+.formulario input:not([type="checkbox"]):invalid,
+.formulario textarea:invalid,
+.formulario select:invalid {
+    border: 2px solid #FF6347;
+}
+
+/* --- CHECKBOXES Y BOTÓN --- */
+.opcion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.opcion input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.opcion label {
+    margin-bottom: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.selectFecha {
+    width: auto !important;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+
+.botonEnviar {
+    width: 100%;
+    background-color: #4a772f;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.botonEnviar:hover {
+    background-color: #8bb174;
+}

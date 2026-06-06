@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen LMI - Ejercicio 1 - Pau Mayordomo</title>
+    <style>
+        /* Estilo dado para la ficha (div)*/
+        .estiloDiv {
+            border: 1px solid black;
+            border-radius: 10%;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // Campo Nombre
+        const campoNombre = document.createElement("input");
+        campoNombre.type = "text";
+        campoNombre.placeholder = "Nombre del personaje";
+        document.body.appendChild(campoNombre);
+
+        // Campo Alias
+        const campoAlias = document.createElement("input");
+        campoAlias.type = "text";
+        campoAlias.placeholder = "Alias";
+        document.body.appendChild(campoAlias);
+
+        // Campo Videojuego
+        const campoVideojuego = document.createElement("input");
+        campoVideojuego.type = "text";
+        campoVideojuego.placeholder = "Videojuego en el que aparece";
+        document.body.appendChild(campoVideojuego);
+
+        // Botón para crear al personaje
+        const botonCrear = document.createElement("button");
+        botonCrear.textContent = "Crear personaje";
+        document.body.appendChild(botonCrear);
+
+        // Evento del botón
+        botonCrear.addEventListener("click", () => {
+
+            // Comprobación para no crear una ficha vacía
+            if (campoNombre.value.trim() == "" || campoAlias.value.trim() == "" || campoVideojuego.value.trim() == "") {
+                alert("Rellene todos los campos para crear la ficha");
+                return;
+            }
+            // Creación del Div (ficha)
+            const nuevoDiv = document.createElement("div");
+            nuevoDiv.classList.add("estiloDiv");
+            document.body.appendChild(nuevoDiv);
+
+            // Lista desordenada donde se pondrá la información
+            const nuevoUl = document.createElement("ul");
+            nuevoDiv.appendChild(nuevoUl);
+
+            // Li del Nombre
+            const liNombre = document.createElement("li");
+            liNombre.textContent = campoNombre.value;
+            nuevoUl.appendChild(liNombre);
+
+            // Li del Alias
+            const liAlias = document.createElement("li");
+            liAlias.textContent = campoAlias.value;
+            nuevoUl.appendChild(liAlias);
+
+            // Li del Videojuego
+            const liVideojuego = document.createElement("li");
+            liVideojuego.textContent = campoVideojuego.value;
+            nuevoUl.appendChild(liVideojuego);
+
+            // Botón con su evento para eliminar la ficha
+            const botonEliminar = document.createElement("button");
+            botonEliminar.textContent = "Eliminar personaje";
+            nuevoDiv.appendChild(botonEliminar);
+
+            botonEliminar.addEventListener("click", () => {
+                nuevoDiv.remove();
+            });
+        });
+    </script>
+</body>
+
+</html>

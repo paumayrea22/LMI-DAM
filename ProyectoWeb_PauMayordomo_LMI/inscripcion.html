@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción - II Jornadas de Micología</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="textoEncabezado">
+            <h1 class="titular">II Jornadas de Micología</h1>
+            <h5 class="subtitulo">Soria, 10 y 11 de Noviembre de 2024</h5>
+        </div>
+        <img src="/ProyectoWeb_PauMayordomo_LMI/img/logo_hongo.png" alt="Logo Jornadas" class="logo">
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="/ProyectoWeb_PauMayordomo_LMI/index.html">INICIO</a></li>
+            <li><a href="/ProyectoWeb_PauMayordomo_LMI/programacion.html">PROGRAMACIÓN</a></li>
+            <li><a href="/ProyectoWeb_PauMayordomo_LMI/inscripcion.html" class="activo">REGISTRO</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="seccionRegistro">
+            <h2 class="tituloRegistro">Registro a las II Jornadas de Micología</h2>
+
+            <form action="/formularios.php" method="get" class="formulario">
+
+                <fieldset class="bloqueFormulario">
+                    <legend>Datos personales</legend>
+
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni" minlength="9" maxlength="9" placeholder="12345678Z" required>
+
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" minlength="10" maxlength="128" required>
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </fieldset>
+
+                <fieldset class="bloqueFormulario">
+                    <legend>Intereses en las jornadas</legend>
+
+                    <label>¿Qué talleres te interesan?*</label>
+                    <div class="cajaTalleres">
+                        <div class="opcion">
+                            <input type="checkbox" id="taller1" name="talleres" value="diversidad">
+                            <label for="taller1">Diversidad de hongos</label>
+                        </div><br>
+                        <div class="opcion">
+                            <input type="checkbox" id="taller2" name="talleres" value="aplicaciones">
+                            <label for="taller2">Hongos y sus aplicaciones prácticas</label>
+                        </div><br>
+                        <div class="opcion">
+                            <input type="checkbox" id="taller3" name="talleres" value="taller">
+                            <label for="taller3">Taller práctico: Observación de hongos</label>
+                        </div><br>
+                        <div class="opcion">
+                            <input type="checkbox" id="taller4" name="talleres" value="medica">
+                            <label for="taller4">Micología médica</label>
+                        </div><br>
+                        <div class="opcion">
+                            <input type="checkbox" id="taller5" name="talleres" value="ambiental">
+                            <label for="taller5">Micología ambiental</label>
+                        </div><br>
+                        <div class="opcion">
+                            <input type="checkbox" id="taller6" name="talleres" value="avances">
+                            <label for="taller6">Avances en el estudio de hongos</label>
+                        </div><br>
+                        <div class="opcion">
+                            <input type="checkbox" id="taller7" name="talleres" value="identificacion">
+                            <label for="taller7">Identificación de hongos comestibles y tóxicos</label>
+                        </div>
+                    </div>
+
+                    <label for="motivo">Motivo de participación:*</label>
+                    <textarea id="motivo" name="motivo" rows="5" required></textarea>
+
+                    <label for="asistencia">Fecha de asistencia:*</label>
+                    <select id="asistencia" name="asistencia" class="selectFecha" required>
+                        <option value="" selected>Elige una fecha</option>
+                        <option value="dia10">10 de noviembre</option>
+                        <option value="dia11">11 de noviembre</option>
+                        <option value="ambos">Ambos días</option>
+                    </select>
+
+                    <div class="opcion">
+                        <input type="checkbox" id="condiciones" name="condiciones" required>
+                        <label for="condiciones"><strong>He leído y acepto las condiciones de participación *</strong></label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="botonEnviar">Enviar registro</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Actividad realizada por <strong>Pau Mayordomo</strong>, para la asignatura de Lenguajes de Marcas <br> Curso 2024/25</p>
+    </footer>
+</body>
+
+</html>

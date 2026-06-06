@@ -1,0 +1,158 @@
+/* --- ESTILOS GENERALES --- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF7ED;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* --- TÍTULOS --- */
+.tituloDiv,
+.subtituloDiv {
+    color: #3F2D1F;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.tituloDiv {
+    font-size: 1.8rem;
+}
+
+.subtituloDiv {
+    font-size: 1.3rem;
+}
+
+/* --- ENCABEZADO Y MENÚ --- */
+header {
+    width: 100%;
+    background-color: #A16207;
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.titular {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.6rem 1.8rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #F97316;
+}
+
+/* --- ESTRUCTURA MAIN --- */
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.panelPrincipal,
+.navesDestacadas {
+    background-color: #FFFFFF;
+    padding: 2.5rem;
+    margin-top: 2rem;
+    border-radius: 0.6rem;
+    border: 1px solid #E7D4BF;
+    overflow: hidden;
+}
+
+/* --- COLUMNAS --- */
+.contenedor {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.columnaIzquierda {
+    float: left;
+    width: 30%;
+    padding-right: 1.5rem;
+}
+
+.columnaDerecha {
+    float: right;
+    width: 70%;
+}
+
+.subArticle,
+.bloqueBriefing {
+    background-color: #FFF7ED;
+    border: 1px solid #E7D4BF;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.encabezadoBriefing {
+    display: block;
+}
+
+.listaMision {
+    list-style-type: square;
+    margin-left: 1.5rem;
+}
+
+/* --- SECCIÓN NAVES --- */
+.fotos {
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+
+.actividad {
+    float: left;
+    width: 31%;
+    margin-right: 3.5%;
+    border: 1px solid #E7D4BF;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: left;
+}
+
+.actividad:last-child {
+    margin-right: 0;
+}
+
+.actividad img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 0.3rem;
+    margin: 0.8rem 0;
+    display: block;
+}
+
+.pieSeccion {
+    clear: both;
+    padding-top: 1.5rem;
+}
+
+/* --- PIE DE PÁGINA --- */
+footer {
+    width: 100%;
+    background-color: #A16207;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3.5rem;
+}

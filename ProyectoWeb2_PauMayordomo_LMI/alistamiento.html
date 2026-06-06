@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alistamiento - Archivo Rebelde</title>
+    <link rel="stylesheet" href="css/alistamiento.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="titular">Archivo Rebelde</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="alistamiento.html">Alistamiento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="tituloSeccion">Alistamiento</h2>
+
+        <section class="solicitudSeccion">
+            <h3 class="tituloDiv">Solicitud de ingreso</h3>
+
+            <form action="#" method="get" class="formularioAlistamiento">
+                <fieldset class="subArticle">
+                    <legend class="subtituloDiv">Datos personales</legend>
+                    <div class="filaFormulario">
+                        <label for="alias">Alias <span class="asteriscoRojo">*</span></label>
+                        <input type="text" id="alias" name="alias" pattern="[A-Za-z0-9]+" required>
+                    </div>
+                    <div class="filaFormulario">
+                        <label for="idCodigo">Código de identificación <span class="asteriscoRojo">*</span></label>
+                        <input type="text" id="idCodigo" name="idCodigo" placeholder="XX-00" pattern="[A-Z]{2}-[0-9]{2}"
+                            required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="subArticle">
+                    <legend class="subtituloDiv">Preferencias</legend>
+                    <div class="filaFormulario">
+                        <label for="bando">Bando</label>
+                        <select id="bando" name="bando">
+                            <option value="rebelion">Rebelión</option>
+                            <option value="imperio" selected>Imperio</option>
+                        </select>
+                    </div>
+                    <div class="contenedorBoton">
+                        <button type="submit" class="botonEnviar">Enviar solicitud</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="autorizacionSeccion">
+            <h3 class="tituloDiv">Códigos de autorización</h3>
+
+            <table class="tablaAccesos">
+                <caption class="captionTabla">Autorizaciones de acceso</caption>
+                <thead>
+                    <tr>
+                        <th colspan="2">Identificación</th>
+                        <th colspan="2">Acceso</th>
+                    </tr>
+                    <tr>
+                        <th>Rango</th>
+                        <th>Código</th>
+                        <th>Zona</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="celdaArena">Cadete</td>
+                        <td>C-102</td>
+                        <td>Hangar</td>
+                        <td>Activo</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="celdaArena">Piloto</td>
+                        <td rowspan="2">P-777</td>
+                        <td>Hangar</td>
+                        <td>En revisión</td>
+                    </tr>
+                    <tr>
+                        <td>Taller</td>
+                        <td>Activo</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="filaFinal">
+                        <td colspan="4"><strong>Total registros:</strong> 3 rangos — <strong>Última
+                                actualización:</strong> 2026</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Pau Mayordomo Real -- 2026</p>
+    </footer>
+</body>
+
+</html>

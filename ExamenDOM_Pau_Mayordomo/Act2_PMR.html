@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen LMI - Ejercicio 2 - Pau Mayordomo</title>
+</head>
+
+<body>
+    <script>
+        // Número del contador
+        let numero = 0;
+
+        // Contador
+        const contador = document.createElement("p");
+        contador.innerText = "Contador: " + numero;
+        document.body.appendChild(contador);
+
+        // Botón que incrementa el número del contador
+        const botonIncrementar = document.createElement("button");
+        botonIncrementar.textContent = "Incrementar";
+        document.body.appendChild(botonIncrementar);
+
+        botonIncrementar.addEventListener("click", () => {
+            if (numero >= 10) {
+                return;
+            } else {
+                numero += 1;
+                contador.innerText = "Contador: " + numero;
+            }
+        });
+
+        // Botón que decrementa el número del contador
+        const botonDecrementar = document.createElement("button");
+        botonDecrementar.textContent = "Decrementar";
+        document.body.appendChild(botonDecrementar);
+
+        botonDecrementar.addEventListener("click", () => {
+            if (numero <= 0) {
+                return;
+            } else {
+                numero -= 1;
+                contador.innerText = "Contador: " + numero;
+            }
+        });
+
+        // Botón que resetea el número del contador
+        const botonReset = document.createElement("button");
+        botonReset.textContent = "Reset";
+        document.body.appendChild(botonReset);
+
+        botonReset.addEventListener("click", () => {
+            numero = 0;
+            contador.innerText = "Contador: " + numero;
+        });
+    </script>
+</body>
+
+</html>
